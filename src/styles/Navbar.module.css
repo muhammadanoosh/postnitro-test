@@ -1,0 +1,139 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 14px 32px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    font-family: sans-serif;
+  }
+  
+  .leftSection {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .logoIcon {
+    width: 24px;
+    height: 24px;
+    background-color: #14b8a6;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logoText {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .navLinks {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+    font-weight: 800;
+    right: 10px;
+  }
+  
+  .dropdownButton {
+    background: none;
+    border: none;
+    font: inherit;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .chevron {
+    font-size: 12px;
+  }
+  
+  .dropdownContent {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    white-space: nowrap;
+    z-index: 100;
+  }
+  
+  .rightSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .flagBtn {
+    background: #E5E5E5;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+  }
+  
+  .imagePostBtn {
+    border: 1px solid #14b8a6;
+    background: white;
+    color: #14b8a6;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+  
+  .betaTag {
+    background: linear-gradient(to right, #47DA9D, #9AE258);
+    color: #ffffff;
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 10px;
+  }
+  
+  .carouselBtn {
+    background-color: #14b8a6;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
