@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "gettingStarted": "开始使用",
+    "products": "产品",
+    "freeTools": "免费工具",
+    "plans": "计划",
+    "createImagePost": "创建图片帖子",
+    "createCarousel": "创建轮播"
+  },
+  "home": {
+    "title": "首页",
+    "welcome": "欢迎使用 PostNitro"
+  }
+} 

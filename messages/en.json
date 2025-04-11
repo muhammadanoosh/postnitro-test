@@ -1,0 +1,22 @@
+{
+  "navbar": {
+    "gettingStarted": "Getting Started",
+    "products": "Products",
+    "freeTools": "Free Tools",
+    "plans": "Plans",
+    "createImagePost": "Create Image Post",
+    "createCarousel": "Create Carousel"
+  },
+  "home": {
+    "title": "Home",
+    "welcome": "Welcome to PostNitro",
+    "hero": {
+      "title": "Create Stunning Social Media Posts",
+      "subtitle": "Design beautiful posts for Instagram, Facebook, and more with our easy-to-use tools",
+      "cta": {
+        "primary": "Get Started",
+        "secondary": "Learn More"
+      }
+    }
+  }
+} 
