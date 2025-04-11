@@ -1,5 +1,8 @@
 .hero-container {
-  padding: 200px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   min-height: 100vh;
 }
@@ -25,7 +28,7 @@
 }
 
 .hero-title {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bold;
   color: #000;
   margin: 0;

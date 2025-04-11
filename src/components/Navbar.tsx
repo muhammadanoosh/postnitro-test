@@ -27,7 +27,7 @@ export default function Navbar() {
             case 'zh':
                 return '/flags/CN - China.svg';
             case 'es':
-                return '/flags/ES - Spain.svg';
+                return '/flags/ES - Spain.svg'; // Spanish flag
             case 'fr':
                 return '/flags/FR - France.svg';
             default:
@@ -42,14 +42,14 @@ export default function Navbar() {
     const changeLanguage = (locale: string) => {
         const currentPath = pathname;
         let newPath;
-        
+
         if (currentPath === '/') {
             newPath = locale === 'en' ? '/' : `/${locale}`;
         } else {
             // Remove any existing locale prefix and add new one if not English
             newPath = currentPath?.replace(/^\/(en|zh|es|fr)?/, locale === 'en' ? '' : `/${locale}`);
         }
-        
+
         router.push(newPath || '');
         setActiveDropdown(null);
     };
@@ -123,7 +123,7 @@ export default function Navbar() {
             {/* Right Section */}
             <div className={styles.rightSection}>
                 <div className={styles.dropdown}>
-                    <button 
+                    <button
                         className={styles.flagBtn}
                         onClick={() => toggleDropdown('language')}
                     >
@@ -131,7 +131,7 @@ export default function Navbar() {
                     </button>
                     {activeDropdown === 'language' && (
                         <div className={styles.dropdownContent}>
-                            <ul style={{listStyle: 'none', margin: 0, padding: 0}}>
+                            <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
                                 <li>
                                     <button className={styles.flagBtn} onClick={() => changeLanguage('en')}>
                                         <Image src="/flags/GB-UKM - United Kingdom.svg" alt="UK Flag" width={24} height={18} />
@@ -166,7 +166,7 @@ export default function Navbar() {
                 </button>
 
                 <button className={styles.carouselBtn}>
-                    {t('createCarousel')}
+                    <Sparkle size={16} />  {t('createCarousel')}
                 </button>
             </div>
         </nav>

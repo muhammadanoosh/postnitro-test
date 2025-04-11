@@ -1,7 +1,7 @@
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { notFound } from 'next/navigation';
 import "@mantine/core/styles.css";
-import "../../src/styles/globals.css";  
+import "../../src/styles/globals.css";
 import React from "react";
 import {
   MantineProvider,
@@ -40,12 +40,14 @@ export default function LocaleLayout({
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
-      <body style={{ 
+      <body style={{
         backgroundImage: 'url(/grid-box.svg)',
         backgroundRepeat: 'repeat',
         backgroundPosition: 'center',
         minHeight: '100vh'
-      }}>
+      }}
+        cz-shortcut-listen="true"
+      >
         <NextIntlClientProvider messages={messages} locale={locale}>
           <MantineProvider theme={theme}>
             <Navbar />
